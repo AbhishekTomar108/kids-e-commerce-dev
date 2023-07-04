@@ -35,7 +35,7 @@ export default function ProductCheckOut() {
   const submitOrder = async()=>{
     console.log('submit order data =', userDetail)
     try
-    { const response = await fetch("http://localhost:5000/api/auth/adduseraddress", {
+    { const response = await fetch("https://commerce-backend-test.onrender.com/api/auth/adduseraddress", {
        method: 'POST', 
        
        headers: {

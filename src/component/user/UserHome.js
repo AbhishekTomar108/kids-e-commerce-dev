@@ -12,10 +12,10 @@ const UserHome = () => {
   },[])
 
     const logoutHandle =()=>{
-        localStorage.clear();
+        // localStorage.clear();
         ContextValue.updateproductname('')
         localStorage.setItem('userStatus',false)
-        navigate('/');
+        navigate('/account');
     }
 
   return (

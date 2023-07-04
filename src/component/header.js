@@ -18,7 +18,7 @@ const Header = () => {
     useEffect(()=>{
 
    if(searchitem!==""){
-    fetch(`http://localhost:5000/api/product/products/`).then(res=>res.json()).then(data=> {const filteredDtata = data.filter(element=>{ return (element.productname.toLowerCase().includes(searchitem,0) || element.category.toLowerCase().includes(searchitem,0))})
+    fetch(`https://commerce-backend-test.onrender.com/api/product/products/`).then(res=>res.json()).then(data=> {const filteredDtata = data.filter(element=>{ return (element.productname.toLowerCase().includes(searchitem,0) || element.category.toLowerCase().includes(searchitem,0))})
     ContextValue.updateFilterProduct(true)
     setfilterData(filteredDtata)
     localStorage.setItem('filterproductData', JSON.stringify(filteredDtata));

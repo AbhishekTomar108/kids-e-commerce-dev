@@ -47,7 +47,7 @@ const updateTotalAmount =(productData)=>{
 
   const fetchUserSavedProduct  =async()=>{
     try
-   { const response = await fetch("http://localhost:5000/api/product/fetchalluserproduct", {
+   { const response = await fetch("https://commerce-backend-test.onrender.com/api/product/fetchalluserproduct", {
         method: 'GET', 
         
         headers: {

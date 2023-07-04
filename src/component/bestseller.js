@@ -21,7 +21,7 @@ const Bestseller = () => {
   },[])
 
   const fetchProductData = async()=>{
-    const res  =await fetch('http://localhost:5000/api/product/products')
+    const res  =await fetch('https://commerce-backend-test.onrender.com/api/product/products')
 
     const data = await res.json();
     setbestSellerData(data);
